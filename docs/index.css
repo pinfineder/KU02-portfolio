@@ -32,9 +32,10 @@
 
 .container{
     position: absolute;
-    height: 100%;
     width: 100%;
-
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     background-color: rgb(251, 255, 195);
 }
 
@@ -42,6 +43,7 @@
     position: absolute;
     height: var(--navbar-height);
     width: 100%;
+    z-index: 99;
 
     background-image: url(./assets/img/wood-2.png);
     background-size: cover;
@@ -88,9 +90,18 @@
     font-family: 'light italic';
 }
 
+.sidebar{
+    display: flex;
+    position: fixed;
+    height: 100%;
+    width: 70px;
+    background-color: brown;
+}
+
 .content{
     position: absolute;
     top: var(--navbar-height);
-    height: calc(100% - var(--navbar-height));
+    height: 20000px;
     width: 100%;
+    
 }
