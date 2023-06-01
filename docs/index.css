@@ -37,6 +37,10 @@
     overflow-y: scroll;
     scroll-behavior: smooth;
     background-color: rgb(251, 255, 195);
+    background-image: url(./assets/img/wood-1.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .navbar{
@@ -49,6 +53,8 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    
+    
 }
 
 .navbar-container{
@@ -62,6 +68,8 @@
     width: 100%;
 
     backdrop-filter: blur(2px);
+    border-bottom: solid 5px;
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar-top{
@@ -95,7 +103,6 @@
     position: fixed;
     height: 100%;
     width: 70px;
-    background-color: brown;
 }
 
 .content{
@@ -103,5 +110,26 @@
     top: var(--navbar-height);
     height: 20000px;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.concrete-1{
+    margin-top: 100px;
+
+    width: 80%;
+    height: 1000px;
+    background-image: url(./assets/img/concrete.png);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+
+    border-radius: 5px;
+    border: solid 5px;
+    border-color: black;
+
+    
     
 }
